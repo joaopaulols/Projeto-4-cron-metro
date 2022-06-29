@@ -8,15 +8,24 @@
 </head>
 
 	<body bgcolor="#FFA500">
+
+		<div class="Cronômetro">
+			<span id="hora">00</span>:
+			<span id ="minutos">00</span>:
+			<span id ="milissegundos">000</span>
+		</div>
+
+		<div class="botoes">
 	
-		<table>
+			<table>
 			<tr>
 			<td><button class="botao" onclick="start()">Start</button></td>
 			<td><button class="botao" onclick="stop()">Stop</button></td>
 			<td><button class="botao" onclick="reset()">Reset</button></td>
 			</tr>
 
-		</table>
+			</table>
+		</div>
 
 	</body>
 
@@ -34,9 +43,7 @@
 
 	}
 
-	var timer = new Timer(function () {
-     console.log("Chamou a função!");
-   }, 3000);
+
 
 
 </script>
