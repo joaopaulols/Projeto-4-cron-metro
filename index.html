@@ -31,8 +31,19 @@
 
 <script>
 
-	function start (){
+	let hora = 0;
+	let minutos = 0;
+	let segundos = 0;
+	let milissegundos = 0;
+	let cron;
 
+	document.getElementById("hora");
+	document.getElementById("minutos");
+	document.getElementById("milissegundos");
+
+	function start (){
+		stop();
+		cron = setInterval(() => {timer(); }, 10);
 	}
 
 	function stop(){
